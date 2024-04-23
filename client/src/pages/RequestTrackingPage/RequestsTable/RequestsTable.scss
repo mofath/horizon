@@ -1,0 +1,21 @@
+.requests-table {
+  display: flex;
+  flex-direction: column;
+  padding: 34px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.requests-table__header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 18px;
+  align-items: center;
+
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    color: #797a7c;
+  }
+}

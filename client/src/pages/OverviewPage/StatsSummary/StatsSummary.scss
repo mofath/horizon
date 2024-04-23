@@ -1,0 +1,38 @@
+.stats-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.stats-summary__item {
+  flex: 1;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.stats-summary__data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.stats-summary__text {
+  font-size: 14px;
+}
+
+.stats-summary__number {
+  font-size: 24px;
+}
+
+.stats-summary__icon {
+  width: 65px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

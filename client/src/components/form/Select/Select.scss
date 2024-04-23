@@ -1,0 +1,36 @@
+.form-group {
+  // display: flex;
+  flex-direction: column;
+}
+
+.form-group select {
+  width: 100%;
+  height: 56px;
+  margin-top: 18px;
+  background: #f9fafc;
+  color: #6f6c90;
+  font-size: 16px;
+  border-radius: 5px;
+  text-indent: 20px;
+  border: solid 1px #d5d6d8;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml,<svg height='18px' width='18px' viewBox='0 0 16 16' fill='gray' xmlns='http://www.w3.org/2000/svg'><path d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708'/></svg>")
+    no-repeat;
+  background-position: calc(100% - 0.75rem) center !important;
+  padding-right: 2rem !important;
+}
+
+.form-group select option {
+  color: #6f6c90;
+}

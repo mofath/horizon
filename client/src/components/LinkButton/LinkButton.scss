@@ -1,0 +1,28 @@
+.link-button-container {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--primary {
+    background: #4c1c72;
+  }
+}
+
+.link-button {
+  color: #6f6c90;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+
+  &--primary {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

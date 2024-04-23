@@ -1,0 +1,88 @@
+@import "../../styles/mixins/responsive.scss";
+
+.layout {
+  padding-left: 0;
+  transition: all 0.5s ease;
+  position: relative;
+  background: #f5f5f5;
+  height: 100vh;
+}
+
+.layout__sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  left: 300px;
+  width: 0;
+  height: 100%;
+  margin-left: -300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.5s ease;
+  background: #fff;
+}
+
+.layout__navbar-wrapper {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  height: 70px;
+  background: #fff;
+}
+
+@include respond-to(lg, min) {
+  .layout {
+    padding-left: 300px;
+  }
+
+  .layout__sidebar-wrapper {
+    width: 300px;
+  }
+
+  .layout__navbar-wrapper {
+    position: relative;
+  }
+
+  .layout__content {
+    position: relative;
+    top: 0;
+    padding: 40px 30px;
+  }
+}
+
+@include respond-to(md, lg) {
+  .layout {
+    padding-left: 60px;
+  }
+
+  .layout__sidebar-wrapper {
+    width: 60px;
+  }
+
+  .layout__navbar-wrapper {
+    position: relative;
+  }
+
+  .layout__content {
+    position: relative;
+    top: 0;
+  }
+}
+
+@include respond-to(md, max) {
+  .layout {
+    padding-left: 0;
+  }
+
+  .layout__sidebar-wrapper {
+    width: 0;
+  }
+
+  .layout__navbar-wrapper {
+    position: relative;
+  }
+
+  .layout__content {
+    position: relative;
+    top: 0;
+  }
+}

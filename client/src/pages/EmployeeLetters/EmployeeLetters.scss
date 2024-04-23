@@ -1,0 +1,19 @@
+.employee-letters-page {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  height: 100%;
+  background: #f5f6fa;
+}
+
+.employee-letters-page__tracker-wrapper {
+  width: 227px;
+}
+
+.employee-letters-page__content {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

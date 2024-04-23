@@ -1,0 +1,108 @@
+@import "../../styles/mixins/responsive.scss";
+
+.success-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../../public/images/bg-ellipses.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__container {
+    width: 1111px;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // Apply styles for screens with a minimum width of md breakpoint
+    @include respond-to(md, min) {
+      width: 536px;
+    }
+  }
+
+  @include respond-to(sm, max) {
+    background-image: none;
+  }
+}
+
+.success-screen__logo {
+  img {
+    width: 170px;
+  }
+}
+
+.success-screen__text {
+  width: 100%;
+
+  .success-screen__title {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 46px;
+    color: #170f49;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+}
+
+.success-screen__content-container {
+  width: 100%;
+  background: #fff;
+  border-radius: 30px;
+  padding: 48px 64px;
+
+  .success-screen__content {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+  }
+}
+
+.success-screen__message {
+  font-size: 24px;
+
+  p:first-child {
+    font-weight: bold;
+    color: #170f49;
+    text-align: center;
+  }
+
+  p {
+    color: #6f6c90;
+    text-align: center;
+  }
+}
+
+.success-screen__footer {
+  p:first-child {
+    color: #6f6c90;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  p {
+    text-align: center;
+    color: #170f49;
+  }
+}
+
+@include respond-to(sm, max) {
+  .success-screen {
+    background-image: none;
+  }
+}
+
+@include respond-to(md, min) {
+  .success-screen {
+    background-image: url("../../../public/images/bg-ellipses.png");
+  }
+
+  .success-screen__container {
+    width: 536px;
+  }
+}

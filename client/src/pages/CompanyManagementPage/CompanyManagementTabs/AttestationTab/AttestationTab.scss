@@ -1,0 +1,12 @@
+.attestation-tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__certify-link {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+    color: #4C1C72;
+  }
+}

@@ -1,0 +1,75 @@
+@import "../../styles/mixins/responsive.scss";
+
+.form-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("../../../public/images/bg-ellipses.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  &__container {
+    width: 536px;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // Apply styles for screens with a minimum width of md breakpoint
+    @include respond-to(md, min) {
+      width: 536px;
+    }
+  }
+
+  @include respond-to(sm, max) {
+    background-image: none;
+  }
+}
+
+.form-page__logo {
+  img {
+    width: 170px;
+  }
+}
+
+.form-page__text {
+  width: 100%;
+
+  .form-page__title {
+    font-size: 34px;
+    font-weight: bold;
+    line-height: 46px;
+    color: #170f49;
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
+  .form-page__subtitle {
+    font-size: 18px;
+    line-height: 30px;
+    color: #6f6c90;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+@include respond-to(sm, max) {
+  .form-page {
+    background-image: none;
+  }
+}
+
+@include respond-to(md, min) {
+  .form-page {
+    background-image: url("../../../public/images/bg-ellipses.png");
+  }
+
+  .form-page__container {
+    width: 536px;
+  }
+}

@@ -1,0 +1,80 @@
+.progress-tracker {
+  --default-bg: lightgrey;
+  --default-color: black;
+  --active-bg: green;
+  --active-color: white;
+  --circle: 34px;
+  --connector-width: 3px;
+
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  background: linear-gradient(var(--default-bg) 0 0) no-repeat 50% calc((var(--circle) - var(--connector-width)) / 2) / 100% var(--connector-width);
+  font-size: 12px;
+  font-weight: bold;
+  overflow: hidden;
+  // background: red !important;
+}
+
+.progress-step {
+  display: grid;
+  place-items: center;
+  gap: 5px;
+  position: relative;
+
+  &::before {
+    content: url('../../assets/icons/check-mark.svg'); ;
+    display: grid;
+    place-content: center;
+    aspect-ratio: 1;
+    height: var(--circle);
+    box-sizing: border-box;
+    background: var(--active-bg);
+    color: var(--active-color);
+    border-radius: 50%;
+    font-family: monospace;
+    z-index: 1;
+  }
+}
+
+.progress-step--active {
+  & ~ .progress-step::before {
+    content: "";
+    background: var(--default-bg);
+    color: var(--default-color);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: var(--connector-width);
+    right: 100%;
+    top: calc((var(--circle) - var(--connector-width)) / 2);
+    background: var(--active-bg);
+  }
+}
+
+// Vertical
+.progress-tracker--vertical {
+  display: grid;
+  gap: 60px;
+  background: linear-gradient(var(--default-bg) 0 0) no-repeat
+    calc((var(--circle) - var(--connector-width)) / 2) 50% /
+    var(--connector-width) 100%;
+
+  .progress-step {
+    display: flex;
+  }
+
+  .progress-stepp--active::after {
+    content: "";
+    position: absolute;
+    width: var(--connector-width);
+    bottom: 100%;
+    left: calc((var(--circle) - var(--connector-width)) / 2);
+    top: auto;
+    right: auto;
+    height: 100vw;
+    background: var(--active-bg);
+  }
+}

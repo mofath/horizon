@@ -1,0 +1,15 @@
+export const ROUTES = {
+  HOME: "/",
+  SIGN_IN: "/sign-in",
+  FORGOT_PASSWORD: "/forgot-password",
+  FORGOT_PASSWORD_VERIFY: "/forgot-password/verify",
+  CHOOSE_COMPANY: "/choose-company",
+  CHANGE_PASSWORD: "/change-password",
+  OVERVIEW: "/overview",
+  EMPLOYEE_MANAGEMENT: "/employment-management",
+  COMPANY_MANAGEMENT: "/company-management",
+  REQUEST_TRACKING: "/request-tracking",
+  REQUEST_TRACKING__EMPLOYEES_LETTERS: "/request-tracking/employee-letters",
+  REQUEST_TRACKING__PURCHASE_DETAILS: "/request-tracking/purchase-details",
+  TEMP: "/temp",
+};

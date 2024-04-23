@@ -1,0 +1,33 @@
+.purchase-info-table__row {
+  height: 52px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 14px;
+
+  &:not(:last-child) {
+    border-bottom: solid 1px #cfd0d2;
+  }
+}
+
+.purchase-info-table__header-cell {
+  width: 230px;
+  color: #4d4e50;
+}
+
+.purchase-info-table__cell {
+  font-weight: bold;
+  flex: 1;
+}
+
+.purchase-info-table__subtitle {
+  margin-bottom: 16px;
+}
+
+
+.purchase-info-table__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 24px;
+  }

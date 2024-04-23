@@ -1,0 +1,31 @@
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  "2xl": 1536px,
+);
+// Define a mixin for media queries using the breakpoints map
+@mixin respond-to($small-breakpoint, $query-type) {
+  // Get the breakpoint values from the map
+  $small-breakpoint-value: map-get($breakpoints, $small-breakpoint);
+
+  // If the query type is 'min' or 'max', calculate the big breakpoint value accordingly
+  $big-breakpoint-value: if($query-type == min, map-get($breakpoints, $small-breakpoint + 1), map-get($breakpoints, $query-type));
+
+  // Generate media query
+  @if $query-type == min {
+    @media (min-width: #{$small-breakpoint-value}) {
+      @content;
+    }
+  } @else if $query-type == max {
+    @media (max-width: #{$small-breakpoint-value - 1px}) {
+      @content; 
+    }
+  } @else {
+    // Generate a media query between the small and big breakpoints
+    @media (min-width: #{$small-breakpoint-value}) and (max-width: #{$big-breakpoint-value - 1px}) {
+      @content; 
+    }
+  }
+}

@@ -1,0 +1,48 @@
+
+// Gray Shades
+$gray-100: #A4A4A4;
+$gray-200: #D9D9D9;
+$gray-300: #828282;
+$gray-400: #8C8C8C;
+$gray-500: #F6F6F6;
+$gray-600: #9A9A9A;
+$gray-700: #F0F0F0;
+$gray-800: #F0F1F1;
+$gray-900: #E9EAEB;
+$gray-1000: #939393;
+$gray-1100: #DBDBDB;
+$gray-1200: #707070;
+$gray-1300: #C9C9C9;
+$gray-1400: #B0B0B0;
+$gray-1500: #626262;
+$gray-1600: #E3E5E7;
+$gray-1700: #A0A0A0;
+$gray-1800: #959595;
+$gray-1900: #DFDFDF;
+$gray-2000: #757575;
+$gray-2100: #8B8B8B;
+$gray-2200: #F0F1F1;
+$gray-2300: #DEECF1;
+$gray-2400: #EEEEFC;
+$gray-2500: #E0E0E0;
+$gray-2600: #B7B7B7;
+
+// Blue Shades
+$blue-100: #0B243F;
+$blue-200: #2E52B2;
+$blue-300: #4E54AB;
+$blue-400: #A3AED0;
+$blue-500: #383874;
+
+// White Shades
+$white-100: #FFFFFF;
+$white-200: #FEFEFE;
+
+// Orange Shades
+$orange-100: #FF5C00;
+$orange-200: #FF5646;
+
+// Other Colors
+$purple-100: #7733FF;
+$red-100: #D80027;
+$green-100: #76FEB5;

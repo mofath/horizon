@@ -1,0 +1,38 @@
+.company-summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  overflow: hidden;
+}
+
+.company-summary__item {
+  flex: 1;
+  position: relative;
+  background: #dbd5e6;
+  padding: 10px 10px;
+  border-radius: 5px;
+  display: flex;
+  height: 100px;
+}
+
+.company-summary__data {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.company-summary__text {
+  font-size: 14px;
+}
+
+.company-summary__number {
+  font-size: 24px;
+}
+
+.company-summary__img {
+  img {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+  }
+}

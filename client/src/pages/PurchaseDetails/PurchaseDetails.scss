@@ -1,0 +1,21 @@
+.purchase-details-page {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.purchase-details-page__content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.purchase-details-page__purchase-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.purchase-details-page__purchase-tracker-wrapper {
+  width: 227px;
+}

@@ -1,0 +1,41 @@
+.tab-container {
+  position: relative;
+}
+
+.tab-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tab {
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #f0f0f0;
+}
+
+.tab.active {
+  font-weight: bold;
+  padding-left: 20px; /* Adjust padding as needed */
+}
+
+.tab::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 20px; /* Adjust height as needed */
+  background-color: blue; /* Adjust color as needed */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tab.active::before {
+  opacity: 1;
+}

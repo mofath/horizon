@@ -1,0 +1,24 @@
+.overview-page {
+  width: 100%;
+  height: 100%;
+}
+
+.overview-page__content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.overview-page__lower-section {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.overview-page__tasks-wrapper {
+    flex: 2;
+}
+
+.overview-page__activities-wrapper {
+    flex: 1;
+}

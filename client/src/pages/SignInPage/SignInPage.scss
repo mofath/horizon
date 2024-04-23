@@ -1,0 +1,21 @@
+@import "../../styles/mixins/responsive.scss";
+
+.sign-in-page__form {
+  background: #fff;
+  border-radius: 30px;
+  padding: 48px 64px;
+  width: 100%;
+}
+
+.sign-in-page__form form > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.sign-in-page__forgot-password-link {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+}
